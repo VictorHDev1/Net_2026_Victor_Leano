@@ -18,10 +18,38 @@ The application follows MVC architecture and applies SOLID principles using a Se
 
 ## Architecture
 
-Controllers → Handle requests  
-Services → API communication  
-ViewModels → Data for Views  
-Views → Razor UI
+```
+Net_2026_Victor_Leano/
+├── Controllers/
+│      ├── AccountController.cs  
+│      └── CompanyController.cs    
+│   
+├── Models/
+│      ├── LoginRequest.cs      
+│      ├── LoginResponse.cs     
+│      └──Company.cs           
+│   
+├── Services/
+│      ├──Interfaces/
+│      │     └──IApiService.cs
+│      └── ApiService.cs
+│   
+├── ViewModels/
+│      └── CompanyViewModel.cs
+│   
+├── Views/
+│   ├──Account/
+│   │     └──Login.cshtml
+│   └── Company.cs
+│           └──Index.cshtml
+│   
+├── wwwroot
+│
+├── Program.cs
+├── appsettings.json
+└──Net_2026_Victor_Leano.csproj
+```
+
 
 ## API Credentials
 
