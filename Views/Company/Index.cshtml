@@ -1,0 +1,139 @@
+﻿@model Net_2026_Victor_Leano.ViewModels.CompanyViewModel
+
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-8">
+
+            <div class="card">
+
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+
+                    <h4 class="mb-0">
+                        <i class="bi bi-building"></i>
+                        Company Information
+                    </h4>
+
+                </div>
+
+                <div class="card-body">
+
+                    <div class="row mb-4">
+
+                        <div class="col-md-6">
+
+                            <div class="info-box">
+
+                                <div class="icon">
+                                    <i class="bi bi-building"></i>
+                                </div>
+
+                                <div>
+                                    <small class="text-muted">Company Name</small>
+                                    <h6>@Model.CompanyName</h6>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="info-box">
+
+                                <div class="icon">
+                                    <i class="bi bi-geo-alt"></i>
+                                </div>
+
+                                <div>
+                                    <small class="text-muted">Address</small>
+                                    <h6>@Model.Address</h6>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+
+                            <div class="info-box">
+
+                                <div class="icon">
+                                    <i class="bi bi-telephone"></i>
+                                </div>
+
+                                <div>
+                                    <small class="text-muted">Emergency Phone</small>
+                                    <h6>@Model.EmergencyPhone</h6>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="info-box">
+
+                                <div class="icon">
+                                    <i class="bi bi-envelope"></i>
+                                </div>
+
+                                <div>
+                                    <small class="text-muted">Emergency Email</small>
+                                    <h6>@Model.EmergencyEmail</h6>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card-footer text-end">
+
+                    <a class="btn btn-outline-primary">
+                        <i class="bi bi-pencil"></i>
+                        Edit Information
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<style>
+
+    .info-box {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+        border-radius: 10px;
+        background: #f8f9fa;
+        transition: 0.3s;
+    }
+
+        .info-box:hover {
+            background: #eef3ff;
+            transform: translateY(-2px);
+        }
+
+        .info-box .icon {
+            font-size: 24px;
+            color: #0d6efd;
+        }
+</style>
